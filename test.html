@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            text-align: center;
+            /* 将导航栏居中 */
+        }
+
+        h1,
+        h2 {
+            text-align: left;
+            /* 将标题左对齐 */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+            /* 使导航栏水平居中 */
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00008B;
+        }
+
+        .avatar {
+            float: right;
+            margin-top: -50px;
+            /* 调整头像位置 */
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+            /* 将内容区域左对齐 */
+        }
+
+        .publication {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#honors-awards">Honors & Awards</a></li>
+        </ul>
+    </nav>
+
+    <img src="einstein.jpg" alt="Einstein" class="avatar">
+
+    <div class="content">
+        <section id="home">
+            <h1>Home</h1>
+            <p>Welcome to my personal website!</p>
+        </section>
+
+        <section id="biography">
+            <h1>Biography</h1>
+            <p>这里是一位科学家的简介：</p>
+            <p>姓名：Albert Einstein</p>
+            <p>生卒年：1879年3月14日 - 1955年4月18日</p>
+            <p>简介：Albert Einstein 是一位著名的理论物理学家，他的相对论和质能方程 E=mc² 影响了整个现代物理学领域。</p>
+        </section>
+
+        <section id="publications">
+            <h1>Publications</h1>
+            <div class="publication">
+                <h2>论文标题1</h2>
+                <p>这里是论文1的摘要。</p>
+                <a href="paper1.pdf">[PDF链接]</a>
+            </div>
+
+            <div class="publication">
+                <h2>论文标题2</h2>
+                <p>这里是论文2的摘要。</p>
+                <a href="paper2.pdf">[PDF链接]</a>
+            </div>
+
+            <!-- 以此类推，添加更多论文 -->
+
+        </section>
+
+        <section id="honors-awards">
+            <h1>Honors & Awards</h1>
+            <p>这里将列出一些荣誉和奖项。</p>
+            <ul>
+                <li>1921年，诺贝尔物理学奖</li>
+                <li>1935年，富兰克林奖章</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
