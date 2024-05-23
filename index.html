@@ -1,39 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网页</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Zihao Fan's homepage</title>
+    <link rel="icon" href="github-mark.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 150px;
+            /* 可以手动调整宽度 */
+            height: 200px;
+            /* 可以手动调整高度 */
+            object-fit: cover;
+            /* 确保图片按比例缩放 */
+        }
+
+        header h1,
+        header p {
+            color: #2C70C9;
+            /* 浅蓝色 */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            color: #2C70C9;
+            /* 浅蓝色 */
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>欢迎来到我的个人网页</h1>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Zihao Fan</h1>
+                <p>B.E.</p>
+                <p>University of Science and Technology of China, Anhui, China</p>
+                <p>Email: zh211050@mail.ustc.edu.cn</p>
+            </div>
+            <img src="face.jpg" alt="Your Photo">
+        </header>
         <nav>
-            <ul>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#portfolio">作品集</a></li>
-                <li><a href="#contact">联系我</a></li>
-            </ul>
+            <a href="#biography">Biography</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Honors & Awards</a>
         </nav>
-    </header>
-    <section id="about">
-        <h2>关于我</h2>
-        <p>你好！我是[你的名字]，这是一段关于我的介绍。</p>
-    </section>
-    <section id="portfolio">
-        <h2>作品集</h2>
-        <p>这里展示我的一些项目和作品。</p>
-    </section>
-    <section id="contact">
-        <h2>联系我</h2>
-        <p>你可以通过以下方式联系我：[你的邮箱]。</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 我的个人网页</p>
-    </footer>
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>I am currently a PhD student in University of Science and Technology of China (USTC). My research
+                interests focus on Computer Vision, especially low-level vision tasks, advised by Xueyang Fu.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Junior High School:</strong> [Your Junior High School Name], [Year of Graduation]</li>
+                <li><strong>High School:</strong> [Your High School Name], [Year of Graduation]</li>
+                <li><strong>University:</strong> University of Science and Technology of China, Anhui, China, [Year of
+                    Graduation]</li>
+            </ul>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>2024</h3>
+            <ul>
+                <li>Revisiting Single Image Reflection Removal In the Wild - <i>Zihao Fan, Xueyang Fu, Peng-Tao Jiang,
+                        Hao Zhang, Jinwei Chen, Qibin Sun, Zheng-Jun Zha, Bo li</i> - IEEE Conference on Computer Vision
+                    and Pattern Recognition (CVPR 2024) [<a href="#">code</a>]</li>
+                <li>HomoFormer: Homogenized Transformer for Image Shadow Removal - <i>Jie Xiao, Xueyang Fu, Zihao Fan,
+                        Dong Li, Jie Huang, Kai Zhu, Zheng-Jun Zha</i> - IEEE Conference on Computer Vision and Pattern
+                    Recognition (CVPR 2024) [<a href="#">code</a>]</li>
+                <li>DreamClean: Restoring Clean Images Using Deep Diffusion Prior - <i>Jie Xiao, Ruili Feng, Zhiheng
+                        Liu, Zhantao Yang, Han Zhang, Zihao Fan, Kai Zhu, Yu Liu, Zheng-Jun Zha</i> - International
+                    Conference on Learning Representations (ICLR 2024) [<a href="#">code</a>]</li>
+            </ul>
+            <h3>2021</h3>
+            <ul>
+                <li>Multifocal Attention-Based Cross-Scale Network for Image De-raining - <i>Zheyu Zhang, Zihao Fan,
+                        Xueyang Fu, Zhiwei Xiong, Zheng-Jun Zha, and Feng Wu</i> - ACM International Conference on
+                    Multimedia (ACM MM) [<a href="#">paper</a>] [<a href="#">download</a>]</li>
+                <li>Rain Streak Removal via Dual Graph Convolutional Network - <i>Xueyang Fu, Qi Qi, Zihao Fan, Xinghao
+                        Ding, and Zheng-Jun Zha</i> - AAAI Conference on Artificial Intelligence (AAAI) [<a
+                        href="#">paper</a>] [<a href="#">download</a>]</li>
+            </ul>
+            <h3>2020</h3>
+            <ul>
+                <li>Learning Dual Transformation Networks for Image Contrast Enhancement - <i>Zihao Fan, Xueyang Fu, and
+                        Aiping Liu</i> - IEEE Signal Processing Letters (SPL) [<a href="#">paper</a>] [<a
+                        href="#">download</a>] [<a href="#">code</a>]</li>
+            </ul>
+        </section>
+        <section id="awards">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>2023 National Scholarship (highest national wide scholarship for students in China)</li>
+                <li>Winner Award in MIPI 2022 Challenge on Under-display Camera Image Restoration Track [<a
+                        href="#">certificate</a>]</li>
+                <li>Winner Award in MIPI 2024 Challenge on Demosaic for HybridEVS Camera Track</li>
+                <li>Winner Award in NTIRE 2024 challenges on Dense and Non-Homogeneous Dehazing Track</li>
+                <li>Winner Award and Runner-up Award in NTIRE 2024 challenges on Shadow Removal - Track 1 Fidelity</li>
+                <li>Runner-up Award in NTIRE 2024 challenges on Shadow Removal - Track 2 Perceptual</li>
+            </ul>
+        </section>
+    </div>
 </body>
 
 </html>

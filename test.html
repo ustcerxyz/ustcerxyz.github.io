@@ -4,112 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网页</title>
+    <title>Zihao Fan's homepage</title>
+    <link rel="icon" href="github-mark.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: black;
-            text-align: center;
-            /* 将导航栏居中 */
-        }
-
-        h1,
-        h2 {
-            text-align: left;
-            /* 将标题左对齐 */
-        }
-
-        nav ul {
-            list-style-type: none;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
             padding: 0;
-            display: inline-block;
-            /* 使导航栏水平居中 */
         }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #00008B;
-        }
-
-        .avatar {
-            float: right;
-            margin-top: -50px;
-            /* 调整头像位置 */
-            margin-right: 20px;
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
-
-        .content {
+        .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: auto;
             padding: 20px;
-            text-align: left;
-            /* 将内容区域左对齐 */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .publication {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 150px;
+            /* 可以手动调整宽度 */
+            height: 200px;
+            /* 可以手动调整高度 */
+            object-fit: cover;
+            /* 确保图片按比例缩放 */
+        }
+
+        header h1,
+        header p {
+            color: #2C70C9;
+            /* 图片中提取的蓝色色号 */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
             margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            color: #2C70C9;
+            /* 图片中提取的蓝色色号 */
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#biography">Biography</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#honors-awards">Honors & Awards</a></li>
-        </ul>
-    </nav>
-
-    <img src="einstein.jpg" alt="Einstein" class="avatar">
-
-    <div class="content">
-        <section id="home">
-            <h1>Home</h1>
-            <p>Welcome to my personal website!</p>
-        </section>
-
+    <div class="container">
+        <header>
+            <div>
+                <h1>Zihao Fan</h1>
+                <p>B.E.</p>
+                <p>University of Science and Technology of China, Anhui, China</p>
+                <p>Email: zh211050@mail.ustc.edu.cn</p>
+            </div>
+            <img src="face.jpg" alt="Your Photo">
+        </header>
+        <nav>
+            <a href="#biography">Biography</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Honors & Awards</a>
+        </nav>
         <section id="biography">
-            <h1>Biography</h1>
-            <p>这里是一位科学家的简介：</p>
-            <p>姓名：Albert Einstein</p>
-            <p>生卒年：1879年3月14日 - 1955年4月18日</p>
-            <p>简介：Albert Einstein 是一位著名的理论物理学家，他的相对论和质能方程 E=mc² 影响了整个现代物理学领域。</p>
+            <h2>Biography</h2>
+            <p>I am currently a B.E. student in University of Science and Technology of China (USTC). My research
+                interests focus on Computer Vision, especially low-level vision tasks, advised by Xueyang Fu.</p>
         </section>
-
-        <section id="publications">
-            <h1>Publications</h1>
-            <div class="publication">
-                <h2>论文标题1</h2>
-                <p>这里是论文1的摘要。</p>
-                <a href="paper1.pdf">[PDF链接]</a>
-            </div>
-
-            <div class="publication">
-                <h2>论文标题2</h2>
-                <p>这里是论文2的摘要。</p>
-                <a href="paper2.pdf">[PDF链接]</a>
-            </div>
-
-            <!-- 以此类推，添加更多论文 -->
-
-        </section>
-
-        <section id="honors-awards">
-            <h1>Honors & Awards</h1>
-            <p>这里将列出一些荣誉和奖项。</p>
+        <section id="education">
+            <h2>Education</h2>
             <ul>
-                <li>1921年，诺贝尔物理学奖</li>
-                <li>1935年，富兰克林奖章</li>
+                <li><strong>Junior High School:</strong> [Your Junior High School Name], [Year of Graduation]</li>
+                <li><strong>High School:</strong> [Your High School Name], [Year of Graduation]</li>
+                <li><strong>University:</strong> University of Science and Technology of China, Anhui, China, [Year of
+                    Graduation]</li>
+            </ul>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>2024</h3>
+            <ul>
+                <li>Revisiting Single Image Reflection Removal In the Wild - <i>Zihao Fan, Xueyang Fu, Peng-Tao Jiang,Hao Zhang, Jinwei Chen, Qibin Sun, Zheng-Jun Zha, Bo li</i> - IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2024) [<a href="#">code</a>]</li>
+                <li>HomoFormer: Homogenized Transformer for Image Shadow Removal - <i>Jie Xiao, Xueyang Fu, Zihao Fan, Dong Li, Jie Huang, Kai Zhu, Zheng-Jun Zha</i> - IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2024) [<a href="#">code</a>]</li>
+                <li>DreamClean: Restoring Clean Images Using Deep Diffusion Prior - <i>Jie Xiao, Ruili Feng, Zhiheng Liu, Zhantao Yang, Han Zhang, Zihao Fan, Kai Zhu, Yu Liu, Zheng-Jun Zha</i> - International Conference on Learning Representations (ICLR 2024) [<a href="#">code</a>]</li>
+            </ul>
+            <h3>2025</h3>
+            <ul>
+                <li>Multifocal Attention-Based Cross-Scale Network for Image De-raining - <i>Zheyu Zhang, Zihao Fan,
+                        Xueyang Fu, Zhiwei Xiong, Zheng-Jun Zha, and Feng Wu</i> - ACM International Conference on
+                    Multimedia (ACM MM) [<a href="#">paper</a>] [<a href="#">download</a>]</li>
+                <li>Rain Streak Removal via Dual Graph Convolutional Network - <i>Xueyang Fu, Qi Qi, Zihao Fan, Xinghao
+                        Ding, and Zheng-Jun Zha</i> - AAAI Conference on Artificial Intelligence (AAAI) [<a
+                        href="#">paper</a>] [<a href="#">download</a>]</li>
+            </ul>
+            <h3>2026</h3>
+            <ul>
+                <li>Learning Dual Transformation Networks for Image Contrast Enhancement - <i>Zihao Fan, Xueyang Fu, and
+                        Aiping Liu</i> - IEEE Signal Processing Letters (SPL) [<a href="#">paper</a>] [<a
+                        href="#">download</a>] [<a href="#">code</a>]</li>
+            </ul>
+        </section>
+        <section id="awards">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>2023 National Scholarship (highest national wide scholarship for students in China)</li>
+                <li>Winner Award in MIPI 2022 Challenge on Under-display Camera Image Restoration Track [<ahref="#">certificate</a>]</li>
+                
             </ul>
         </section>
     </div>
