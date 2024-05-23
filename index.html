@@ -12,7 +12,8 @@
             line-height: 1.6;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding-top: 70px;
+            /* 预留出固定导航栏的高度 */
         }
 
         .container {
@@ -42,19 +43,41 @@
         header h1,
         header p {
             color: #2C70C9;
-            /* 浅蓝色 */
+            /* 图片中提取的蓝色色号 */
         }
 
         nav {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
         }
 
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #2C70C9;
+            /* 与标题相同的颜色 */
+            font-size: 16px;
+            /* 与标题的字体大小一致 */
+            font-family: Arial, sans-serif;
+            /* 与标题的字体一致 */
         }
 
         nav a:hover {
@@ -69,12 +92,29 @@
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
             color: #2C70C9;
-            /* 浅蓝色 */
+            /* 图片中提取的蓝色色号 */
+            margin-top: 70px;
+            /* 为了让导航栏不遮挡标题 */
+        }
+
+        section:target h2 {
+            padding-top: 70px;
+            /* 与导航栏高度相同 */
+            margin-top: -70px;
+            /* 抵消padding-top带来的影响 */
         }
     </style>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Honors & Awards</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <header>
             <div>
@@ -85,15 +125,9 @@
             </div>
             <img src="face.jpg" alt="Your Photo">
         </header>
-        <nav>
-            <a href="#biography">Biography</a>
-            <a href="#education">Education</a>
-            <a href="#publications">Publications</a>
-            <a href="#awards">Honors & Awards</a>
-        </nav>
         <section id="biography">
             <h2>Biography</h2>
-            <p>I am currently a PhD student in University of Science and Technology of China (USTC). My research
+            <p>I am currently a B.E. student in University of Science and Technology of China (USTC). My research
                 interests focus on Computer Vision, especially low-level vision tasks, advised by Xueyang Fu.</p>
         </section>
         <section id="education">
@@ -101,7 +135,8 @@
             <ul>
                 <li><strong>Junior High School:</strong> [Your Junior High School Name], [Year of Graduation]</li>
                 <li><strong>High School:</strong> [Your High School Name], [Year of Graduation]</li>
-                <li><strong>University:</strong> University of Science and Technology of China, Anhui, China, [Year of Graduation]</li>
+                <li><strong>University:</strong> University of Science and Technology of China, Anhui, China, [Year of
+                    Graduation]</li>
             </ul>
         </section>
         <section id="publications">
@@ -110,7 +145,8 @@
             <ul>
                 <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - IEEE Conference on Computer Vision
                     and Pattern Recognition (CVPR 2025) [<a href="#">code</a>]</li>
-                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - IEEE Conference on Computer Vision and Pattern
+                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - IEEE Conference on Computer Vision and
+                    Pattern
                     Recognition (CVPR 2025) [<a href="#">code</a>]</li>
                 <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - International
                     Conference on Learning Representations (ICLR 2025) [<a href="#">code</a>]</li>
@@ -119,19 +155,20 @@
             <ul>
                 <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - ACM International Conference on
                     Multimedia (ACM MM) [<a href="#">paper</a>] [<a href="#">download</a>]</li>
-                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - AAAI Conference on Artificial Intelligence (AAAI) [<a
-                        href="#">paper</a>] [<a href="#">download</a>]</li>
+                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - AAAI Conference on Artificial
+                    Intelligence (AAAI) [<a href="#">paper</a>] [<a href="#">download</a>]</li>
             </ul>
             <h3>2027</h3>
             <ul>
-                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - IEEE Signal Processing Letters (SPL) [<a href="#">paper</a>] [<a href="#">download</a>] [<a href="#">code</a>]</li>
+                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - <i>Zihao Fan</i> - IEEE Signal Processing Letters (SPL) [<a
+                        href="#">paper</a>] [<a href="#">download</a>] [<a href="#">code</a>]</li>
             </ul>
         </section>
         <section id="awards">
             <h2>Honors & Awards</h2>
             <ul>
-                <li>2023 National Scholarship (highest national wide scholarship for students in China)</li>
-                <li>Winner Award in MIPI 2022 Challenge on Under-display Camera Image Restoration Track [<a href="#">certificate</a>]</li>
+                <li>2021、2022 Scholarship (second scholarship for students in USTC)</li>
+                <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx [<a href="#">certificate</a>]</li>
             </ul>
         </section>
     </div>
